@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+.content {
+  width: 100%;
+  margin-top: 5%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding: 10%; */
+  align-items: center;
+  font-size: 20px;
+  text-align: center;
+  color: rgb(70, 71, 72);
+}
+
+.amount-field {
+  margin-top: 10%;
+  width: 100%;
+  height: auto;
+  border: 0;
+  outline: none;
+  border-bottom: 1px solid black;
+  text-align: center;
+  font-size: large;
+}
+
+/* Remove Arrows/Spinners from input  */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.amount-field:hover,
+:focus {
+  outline: none;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 38%,
+    rgba(252, 252, 252, 1) 68%,
+    rgb(135, 219, 205) 100%
+  );
+}
+
+.currency {
+  padding: 10px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.currency-dropdown {
+  margin: 10px;
+  width: 10%;
+  height: auto;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+}
+
+.currency-dropdown:hover {
+  outline: none;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 38%,
+    rgba(252, 252, 252, 1) 68%,
+    rgb(135, 219, 205) 100%
+  );
+}
+
+.button {
+  width: 10%;
+  height: auto;
+  padding: 10px;
+  border-bottom: 1px solid black;
+  text-align: center;
+  font-size: large;
+  cursor: pointer;
+  border: 0;
+  border-bottom: 1px solid black;
+  outline: none;
+  background-color: white;
+}
+
+.button:hover {
+  outline: none;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 38%,
+    rgba(252, 252, 252, 1) 68%,
+    rgb(135, 219, 205) 100%
+  );
+}
+
+.result {
+  padding: 30px;
+}
+
+.current-rate {
+  width: 100%;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 15px;
+  text-align: center;
+  color: rgb(70, 71, 72);
+}
+
+.rate-table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  border: 2px solid rgb(200, 200, 200);
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+td,
+th {
+  border: 1px solid rgb(190, 190, 190);
+  padding: 10px 20px;
+}
+
+td {
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .content {
+    font-size: 18px;
+  }
+}
+
+
+@media screen and (min-width: 1025px) {
+  .content {
+    font-size: 20px;
+  }
+}
